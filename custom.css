@@ -1,0 +1,68 @@
+/* Custom Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.btn-primary {
+  background-color: #00a4dc;
+  border-color: #00a4dc;
+}
+
+.btn-primary:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.btn-secondary {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #222;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #222;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.text-primary {
+  color: #00a4dc;
+}
+
+.text-secondary {
+  color: #999;
+}
