@@ -3,6 +3,7 @@ import "./LoginPage.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+
 function LoginPage() {
   return (
     <div className = "Contenedor-padre">
