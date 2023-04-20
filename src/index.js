@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import LoginPage from './componentes/LoginPage/LoginPage';
 import UsuarioRegistro from './componentes/UsuarioRegistro/Registro';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Menu from './componentes/Menu/Menu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={ <LoginPage/>}/>
         <Route path="/Registro" element={ <UsuarioRegistro/>}/>
+        <Route path="/Menu" element={<Menu/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
