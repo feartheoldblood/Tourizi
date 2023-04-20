@@ -4,9 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LoginPage from './componentes/LoginPage/LoginPage';
 import UsuarioRegistro from './componentes/UsuarioRegistro/Registro';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home1 from './componentes/Home/Home';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
+import Index from './componentes/Pages/Index';
 
 
 
@@ -15,8 +15,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        
-        <Route path='/' element={ <Home1/>}/>
+        <Route path='/' element={ <Index/>} />        
         <Route path="/Login " element={ <LoginPage/>}/>
         <Route path="/Registro" element={ <UsuarioRegistro/>}/>
         
