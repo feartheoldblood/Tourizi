@@ -6,6 +6,7 @@ import LoginPage from './componentes/LoginPage/LoginPage';
 import UsuarioRegistro from './componentes/UsuarioRegistro/Registro';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Menu from './componentes/Menu/Menu';
+import LoginPageR from './componentes/LoginPage/LoginPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
