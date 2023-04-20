@@ -7,6 +7,7 @@ import UsuarioRegistro from './componentes/UsuarioRegistro/Registro';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Menu from './componentes/Menu/Menu';
 import LoginPageG from './componentes/LoginPageG/LoginPageG';
+import Choose from './componentes/choosing/choosing'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,8 @@ root.render(
         <Route path="/Registro" element={ <UsuarioRegistro/>}/>
         <Route path="/Menu" element={<Menu/>}/>
         <Route path="/LoginGuia" element={<LoginPageG/>}/>
+        <Route path="/decidir" element={<Choose/>}/>
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
