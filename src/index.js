@@ -2,20 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import LoginPage from './componentes/LoginPage/LoginPage';
+import LoginPageC from './componentes/LoginPageC/LoginPageC';
 import UsuarioRegistro from './componentes/UsuarioRegistro/Registro';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Menu from './componentes/Menu/Menu';
-import LoginPageR from './componentes/LoginPage/LoginPage';
+import LoginPageG from './componentes/LoginPageG/LoginPageG';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <LoginPage/>}/>
+        <Route path="/" element={ <LoginPageC/>}/>
         <Route path="/Registro" element={ <UsuarioRegistro/>}/>
         <Route path="/Menu" element={<Menu/>}/>
+        <Route path="/LoginGuia" element={<LoginPageG/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

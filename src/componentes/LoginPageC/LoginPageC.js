@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
-import LoginFormR from "../comp_Login/LoginFormR"
+import LoginFormC from "../comp_LoginC/LoginFormC"
 import React from "react"
 
-function LoginPageR(){
+function LoginPageC(){
     const navigate = useNavigate()
 
     const loginHttp = async function(usuario, password){
@@ -43,15 +43,15 @@ function LoginPageR(){
     return <div className="container w-75 mt-5 rounded">
         <div className="row align-items-stretch">
             <div className="col">
-                <h2 className="fw-bold text-center py-5">Login Restaurante</h2>
-                <LoginFormR onLoginOk={onLoginOk}/>
+                <h2 className="fw-bold text-center py-5">Login Usuario-Cliente</h2>
+                <LoginFormC onLoginOk={onLoginOk}/>
             </div>
         </div>
     </div>
 
 }
 
-export default LoginPageR
+export default LoginPageC
 
 
 

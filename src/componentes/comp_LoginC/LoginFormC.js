@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import React from "react";
 
-function LoginFormR(props){
+function LoginFormC(props){
     const [usuario, setUsuario] = useState("")
     const [password, setPassword] = useState("")
 
@@ -32,10 +32,10 @@ function LoginFormR(props){
             </button>
         </div>
         <div className="my-3">
-            <Link to={"/"}>No eres usuario restaurante?</Link>
+            <Link to={"/LoginGuia"}>No eres usuario cliente?</Link>
         </div>
     </form>
 }
 
 
-export default LoginFormR
+export default LoginFormC
