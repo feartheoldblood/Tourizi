@@ -17,8 +17,6 @@ function Home1() {
                         </li>
                     </ul>
             </div>
-            
-        
         </div>
     );
 }
