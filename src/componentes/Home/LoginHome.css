@@ -1,0 +1,23 @@
+.Contenedor{
+    display: flex;
+    /* justify-content: center; */
+    gap: 80px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+
+
+p{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: black;
+    font-size: 8px;
+    text-align: left;
+    opacity: 0.5;
+  }
