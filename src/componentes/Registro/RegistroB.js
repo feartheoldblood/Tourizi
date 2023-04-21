@@ -1,14 +1,17 @@
+import { useNavigate } from "react-router-dom"
 import React from "react";
 import Registro from '../UsuarioRegistro/Registro'
 
 function RegistroB(){
     const navigate = useNavigate()
 
-    const loginHttp = async function(usuario, password){
-        const response = await fetch("http://localhost:8000/endpoints/loginC", {
+    const loginHttp = async function(nombre, apellido, usuario, password){
+        const response = await fetch("http://localhost:8000/endpoints/registroCliente", {
             method : "POST",
             body : JSON.stringify(
                 {
+                    nombre : nombre,
+                    apellido : apellido,
                     usuario : usuario,
                     password : password
                 }
@@ -18,10 +21,12 @@ function RegistroB(){
         return data.error
     }
 
-    const onRegistroOK = async function(usuario, password){
-        const error = await loginHttp(usuario, password)
+    const onRegistroOK = async function(nombre, apellido, usuario, password){
+        const error = await loginHttp(nombre, apellido, usuario, password)
         if (error === ""){
             const dataUsuario = {
+                nombre : nombre,
+                apellido : apellido,
                 usuario : usuario,
                 password : password
             }
@@ -29,11 +34,7 @@ function RegistroB(){
             const dataUsuarioJSON = JSON.stringify(dataUsuario)
             sessionStorage.setItem("DATA_USUARIO", dataUsuarioJSON)
 
-            navigate("/pantalla3", {
-                state : {
-                    usuario : usuario
-                }
-            })
+            navigate("/Index")
         }else{
             console.error(error)
         }

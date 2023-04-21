@@ -15,7 +15,7 @@ const Index = () => {
                     <Card />
                 </div>
                 <div className="col-lg-6">
-                    <img className="img-fluid rounded-3 border border-4" src="#"/>
+                    <img className="img-fluid rounded-3 border border-4" src="" alt=""/>
                 </div>           
             </div>
         </div>

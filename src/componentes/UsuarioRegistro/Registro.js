@@ -1,7 +1,21 @@
 import React from "react";
+import { useState } from "react";
 
 
-const UsuarioRegistro = () => {
+function UsuarioRegistro(props){
+    const [nombre, setNombre] = useState("")
+    const [apellido, setApellido] = useState("")
+    const [usuario, setUsuario] = useState("")
+    const [password, setPassword] = useState("")
+
+    const butOnClick = function() {
+      console.log("Nombre:", nombre)
+      console.log("Apellido:", apellido)
+      console.log("Usuario:", usuario)
+      console.log("Password:", password)
+      props.onLoginOk(nombre, apellido, usuario, password)
+  }
+  
   return (
     <div class="container mb-3">
       <h1 class="mt-5 mb-5 text-center">Crea una nueva cuenta</h1>
@@ -17,6 +31,8 @@ const UsuarioRegistro = () => {
               placeholder="Juan Pablo"
               type="text"
               required
+              value={nombre}
+              onChange={function(evt) {setNombre(evt.target.value)}} 
             />
             <div class="valid-feedback">Bien</div>
             <div class="invalid-feedback">Por favor escriba su nombre</div>
@@ -31,6 +47,8 @@ const UsuarioRegistro = () => {
               type="text"
               class="form-control"
               required
+              value={apellido}
+                onChange={function(evt) {setApellido(evt.target.value)}}
             />
           </div>
           <div class="mt-3">
@@ -42,6 +60,8 @@ const UsuarioRegistro = () => {
               placeholder="tucorreo@algo.com"
               type="email"
               class="form-control"
+              value={usuario}
+              onChange={function(evt) {setUsuario(evt.target.value)}}
             />
           </div>
           <div class="mt-3">
@@ -53,16 +73,17 @@ const UsuarioRegistro = () => {
               placeholder="Min 6 caracteres"
               type="password"
               class="form-control"
+              value={password}
+              onChange={function(evt) {setPassword(evt.target.value)}}
             />
           </div>
           <div class="mb-5 mt-3">
-            <a
-              type="submit"
-              class="w-100 btn btn btn-primary btn-lg btn-block"
-              href=""
+            <button
+              className="w-100 btn btn btn-primary btn-lg btn-block" type="button"
+              onClick={ butOnClick }
             >
               REGISTRARSE
-            </a>
+            </button>
           </div>
           <div class="d-flex justify-space-between align-items-center mb-5">
             <hr class="bg-gray-300 w-100 mr-1" />

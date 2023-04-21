@@ -15,12 +15,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <LoginPageC/>}/>
+        <Route path="/Index" element={ <LoginPageC/>}/>
         <Route path="/Registro" element={ <UsuarioRegistro/>}/>
         <Route path="/Menu" element={<Menu/>}/>
         <Route path="/LoginGuia" element={<LoginPageG/>}/>
         <Route path="/decidir" element={<Choose/>}/>
-        <Route path="/Index" element={<Index/>}/>
+        <Route path="/" element={<Index/>}/>
 
       </Routes>
     </BrowserRouter>

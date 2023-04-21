@@ -6,7 +6,7 @@ function LoginPageG(){
     const navigate = useNavigate()
 
     const loginHttp = async function(usuario, password){
-        const response = await fetch("http://localhost:8000/endpoints/loginC", {
+        const response = await fetch("http://localhost:8000/endpoints/loginGuia", {
             method : "POST",
             body : JSON.stringify(
                 {

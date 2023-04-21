@@ -23,7 +23,7 @@ const Card = () => {
                                 <h4>¿Qué servicio proporcionamos?</h4>
                             </button>
                         </h2>
-                        <div key="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div key="panelsStayOpen-collapseTwo" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
                             <div className="accordion-body text-start">
                                 Brindamos un servicio de calidad, donde podra programar una visita a un sitio turistico y el traslado al mismo tiempo.
                             </div>

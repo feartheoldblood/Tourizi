@@ -6,7 +6,7 @@ function LoginPageC(){
     const navigate = useNavigate()
 
     const loginHttp = async function(usuario, password){
-        const response = await fetch("http://localhost:8000/endpoints/loginR", {
+        const response = await fetch("http://localhost:8000/endpoints/loginCliente", {
             method : "POST",
             body : JSON.stringify(
                 {
@@ -30,7 +30,7 @@ function LoginPageC(){
             const dataUsuarioJSON = JSON.stringify(dataUsuario)
             sessionStorage.setItem("DATA_USUARIO", dataUsuarioJSON)
 
-            navigate("/pantalla10", {
+            navigate("/decidir", {
                 state : {
                     usuario : usuario
                 }
